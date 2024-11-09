@@ -15,13 +15,13 @@ public class HelloController {
 	@PreAuthorize("hasRole('USER')")
 	@GetMapping("/user")
 	public String SayHelloUser() {
-		return "Hello...User!";
+		return "Hello...User!!";
 	}
 
 	@PreAuthorize("hasRole('ADMIN')")
 	@GetMapping("/admin")
 	public String SayHelloAdmin() {
-		return "Hello...Admin!";
+		return "Hello...Admin!!";
 	}
 
 
